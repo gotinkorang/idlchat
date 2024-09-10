@@ -2,7 +2,6 @@ import React from "react";
 import Markdown from "markdown-to-jsx";
 import cx from "@/utils/cx";
 import { Message as MessageProps } from "ai/react";
-import UpstashLogo from "@/components/upstash-logo";
 import { IconUser } from "@tabler/icons-react";
 
 const Message: React.FC<MessageProps> = ({ content, role }) => {
@@ -46,7 +45,7 @@ const Avatar: React.FC<{ isUser?: boolean; className?: string }> = ({
         className,
       )}
     >
-      {isUser ? <IconUser size={20} /> : <UpstashLogo />}
+    
     </div>
   );
 };
