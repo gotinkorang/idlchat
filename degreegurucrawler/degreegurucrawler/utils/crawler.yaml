@@ -1,0 +1,28 @@
+crawler:
+  # Start at the root of the IDL website
+  start_urls:
+    - https://idl.knust.edu.gh/
+
+  # Restrict the crawler to the IDL domain
+  allowed_domains:
+    - 'idl.knust.edu.gh'
+
+  # Extract and follow all links within the IDL domain
+  link_extractor:
+    allow:
+      - 'idl\.knust\.edu\.gh.*'  # Follow all pages and links within idl.knust.edu.gh
+    deny: []  # No pages are explicitly denied
+
+  # Optional: Additional crawler settings (adjust as necessary)
+  custom_settings:
+    DEPTH_LIMIT: 5  # Optional: Limit the depth of crawling; remove if not needed
+    DOWNLOAD_DELAY: 0.5  # Add a small delay between requests to avoid server overload
+
+index:
+  # Use OpenAI's embedding model for vector embeddings
+  openAI_embedding_model: text-embedding-ada-002
+  
+  # Split the scraped text into chunks for efficient embedding
+  text_splitter:
+    chunk_size: 1000  # Max size of each text chunk (characters)
+    chunk_overlap: 100  # Overlap between chunks to maintain context

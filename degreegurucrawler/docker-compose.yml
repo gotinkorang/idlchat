@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  my_service:
+    image: degreegurucrawler
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - UPSTASH_VECTOR_REST_URL=https://enough-hog-60752-us1-vector.upstash.io
+      - UPSTASH_VECTOR_REST_TOKEN=ABQFMGVub3VnaC1ob2ctNjA3NTItdXMxYWRtaW5abUl3TWpnME1HSXROekpqT0MwME9URXlMVGcxTVRRdE1tVm1NMlptTVRGbVpqaGk=
+      - OPENAI_API_KEY=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
