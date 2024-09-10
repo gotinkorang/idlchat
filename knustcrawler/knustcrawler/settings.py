@@ -1,4 +1,4 @@
-# Scrapy settings for degreegurucrawler project
+# Scrapy settings for knustcrawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,15 +7,15 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "degreegurucrawler"
+BOT_NAME = "knustcrawler"
 
-SPIDER_MODULES = ["degreegurucrawler.spiders"]
-NEWSPIDER_MODULE = "degreegurucrawler.spiders"
+SPIDER_MODULES = ["knustcrawler.spiders"]
+NEWSPIDER_MODULE = "knustcrawler.spiders"
 
 DEPTH_LIMIT = 3
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "degreegurucrawler (+http://www.yourdomain.com)"
+#USER_AGENT = "knustcrawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -46,13 +46,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "degreegurucrawler.middlewares.DegreegurucrawlerSpiderMiddleware": 543,
+#    "knustcrawler.middlewares.knustcrawlerSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "degreegurucrawler.middlewares.DegreegurucrawlerDownloaderMiddleware": 543,
+#    "knustcrawler.middlewares.knustcrawlerDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -64,7 +64,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "degreegurucrawler.pipelines.DegreegurucrawlerPipeline": 300,
+#    "knustcrawler.pipelines.knustcrawlerPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

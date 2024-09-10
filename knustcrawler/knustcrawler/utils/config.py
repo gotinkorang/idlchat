@@ -1,7 +1,7 @@
 import os
 import yaml
 
-config_path = "degreegurucrawler/utils/crawler.yaml"
+config_path = "knustcrawler/utils/crawler.yaml"
 with open(config_path, 'r') as file:
     config = yaml.load(file, Loader=yaml.FullLoader)
 
