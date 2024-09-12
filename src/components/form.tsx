@@ -1,6 +1,7 @@
 import { ComponentProps, forwardRef } from "react";
 import { IconArrowBack } from "@tabler/icons-react";
 import cx from "@/utils/cx";
+import { Analytics } from "@vercel/analytics/react"
 
 export interface Props extends ComponentProps<"form"> {
   inputProps: ComponentProps<"input">;

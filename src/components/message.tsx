@@ -3,7 +3,7 @@ import Markdown from "markdown-to-jsx";
 import cx from "@/utils/cx";
 import { Message as MessageProps } from "ai/react";
 import { IconUser } from "@tabler/icons-react";
-
+import { Analytics } from "@vercel/analytics/react"
 const Message: React.FC<MessageProps> = ({ content, role }) => {
   const isUser = role === "user";
 

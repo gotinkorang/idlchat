@@ -1,6 +1,7 @@
 import React from "react";
 import cx from "@/utils/cx";
 import { Avatar } from "@/components/message";
+import { Analytics } from "@vercel/analytics/react"
 
 const MessageLoading: React.FC = () => {
   return (
