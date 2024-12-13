@@ -49,7 +49,7 @@ The architecture of KIRIKOU is designed for efficiency and scalability:
 3. **Deployment**:
    - Hosted on Vercel for seamless deployment and high availability.
 
-![Architecture Diagram](https://raw.githubusercontent.com/gotinkorang/idlchat/refs/heads/main/figs/infrastructure.png) 
+![Architecture Diagram](https://github.com/gotinkorang/idlchat/blob/main/figs/infrastructure.png?raw=true) 
 
 ## Technologies Used
 
